@@ -58,7 +58,6 @@
             <version>2.14.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-cucumber4-jvm</artifactId>
@@ -76,6 +75,8 @@
             <artifactId>cucumber-testng</artifactId>
             <version>7.13.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+
 
     </dependencies>
 
