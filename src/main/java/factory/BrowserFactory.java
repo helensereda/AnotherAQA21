@@ -9,17 +9,20 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import utils.configuration.ReadProperties;
 
+import java.sql.DriverManager;
 import java.time.Duration;
 
 public class BrowserFactory {
     private WebDriver driver = null;
     private DriverManagerType driverManagerType = null;
 
-    public BrowserFactory() {
-        switch (ReadProperties.browserName().toLowerCase()) {
-            case "chrome" :
+
+    public BrowserFactory (){
+        switch (ReadProperties.browserName().toLowerCase()){
+            case "chrome":
                 driverManagerType = DriverManagerType.CHROME;
-                WebDriverManager.getInstance(driverManagerType).setup();
+                //WebDriverManager.chromedriver().driverVersion("114.0.5735.90").setup();
+                WebDriverManager.getInstance(driverManagerType).clearDriverCache().setup();
 
                 driver = new ChromeDriver(getChromeOptions());
                 break;
@@ -30,12 +33,12 @@ public class BrowserFactory {
                 driver = new FirefoxDriver(getFirefoxOptions());
                 break;
             default:
-                System.out.println("Browser " + ReadProperties.browserName() + " is not supported.");
+                System.out.println("Browser " + ReadProperties.browserName() + "is not supported");
                 break;
         }
     }
 
-    public WebDriver getDriver() {
+    public WebDriver getDriver(){
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
 
@@ -45,7 +48,7 @@ public class BrowserFactory {
     public ChromeOptions getChromeOptions() {
         ChromeOptions chromeOptions = new ChromeOptions();
 
-        chromeOptions.setHeadless(false);
+        //chromeOptions.setHeadless(false);
         chromeOptions.addArguments("--disable-gpu");
         chromeOptions.addArguments("--ignore-certificate-errors");
         chromeOptions.addArguments("--silent");

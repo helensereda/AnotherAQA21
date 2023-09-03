@@ -5,11 +5,11 @@ import org.openqa.selenium.WebDriver;
 import services.WaitService;
 import utils.configuration.ReadProperties;
 
-public abstract class BasePage {
+public abstract class BasePage_hw {
     protected WebDriver driver;
     protected WaitService waitService;
 
-    public BasePage(WebDriver driver) {
+    public BasePage_hw(WebDriver driver) {
         this.driver = driver;
         this.waitService = new WaitService(driver);
     }
