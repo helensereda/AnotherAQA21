@@ -4,16 +4,12 @@ import baseEntities.BasePage_hw;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-
-public class CheckOutCompletePage extends BasePage_hw {
+public class CheckOutCompletePage extends BasePage_hw{
     private final static String pagePath = "/checkout-complete.html";
 
     // Блок описания локаторов для элементов
-    @FindBy(id = "checkout_complete_container")
-    public WebElement checkOutComplete;
-    @FindBy(id = "back-to-products")
-    public WebElement finishButton;
+    private final By checkOutCompleteLocator = By.id("checkout_complete_container");
+    private final By finishButtonLocator = By.id("back-to-products");
 
     //блок инициализации
     public CheckOutCompletePage (WebDriver driver) {
@@ -24,10 +20,20 @@ public class CheckOutCompletePage extends BasePage_hw {
     }
     @Override
     protected By getPageIdentifier() {
-        return By.xpath("checkout_complete_container");
+        return finishButtonLocator;
+    }
+    //Блок атомарных методов
+
+    public WebElement getCheakOutComplete() {
+        return driver.findElement(checkOutCompleteLocator);
+    }
+
+    public WebElement getFinishButton() {
+        return driver.findElement(finishButtonLocator);
     }
     // Блок комплексных методов
+
     public void getHome() {
-        checkOutComplete.click();
+        getFinishButton().click();
     }
 }
