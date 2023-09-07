@@ -4,41 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0078efa-38e6-44cb-a33f-05c301e6b31a" name="Changes" comment="json_hm">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/adapters/BaseAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/adapters/ProjectAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/LoginStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/HttpClientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/ReqresApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/TestRailApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/TestRailApiTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/gui/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Endpoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/baseEntities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefs/ErrorSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefs/FirstStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefs/Hook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefs/LoginSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/data/project.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/data/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/first.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/second.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/third.feature" beforeDir="false" />
+    <list default="true" id="a0078efa-38e6-44cb-a33f-05c301e6b31a" name="Changes" comment="apitests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +203,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693751476571</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="apitests">
+      <created>1693766585076</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693766585076</updated>
+    </task>
+    <task id="LOCAL-00008" summary="apitests">
+      <created>1693766600984</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693766600984</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +249,8 @@
     <MESSAGE value="progect" />
     <MESSAGE value="json" />
     <MESSAGE value="json_hm" />
-    <option name="LAST_COMMIT_MESSAGE" value="json_hm" />
+    <MESSAGE value="apitests" />
+    <option name="LAST_COMMIT_MESSAGE" value="apitests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
